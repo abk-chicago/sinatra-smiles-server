@@ -15,7 +15,7 @@ class Smile
   end
 
   def get_smiles
-    @smiles
+    bubble_sort(@smiles)
   end
 
   def to_s
@@ -23,8 +23,7 @@ class Smile
   end
 
   private
-  #everything after here is private
-
+  #everything after here is private buahahahahaha
   def bubble_sort(arr)
     length = arr.size
 
@@ -32,28 +31,27 @@ class Smile
       swapped = false
       (length - 1).times do |i|
         if arr[i] > arr[i + 1]
-          arr[i], arr[i + 1] = arr[i + 1], arr[i] #swapped them by redefining them
+          arr[i], arr[i + 1] = arr[i + 1], arr[i]
           swapped = true
-        end #end loop
-      end #end if
+        end # end loop
+      end # end if
       break if not swapped
     end #end loop
-    #return sorted Array
+
+    # return sorted Array
     arr
   end #end bubble_sort
 
-
-  def search_list(arr,query)
+  def search_list(arr, query)
     dataset = Array.new
 
     arr.each do |item|
       if item.include? query
         dataset.push(item)
-      end #end if
+      end
+    end
 
     dataset
   end #end search_list
-end
-
 
 end
