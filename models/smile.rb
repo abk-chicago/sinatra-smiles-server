@@ -10,6 +10,7 @@ class Smile
   end
 
   def find_smile(txt)
+
   end
 
   def get_smiles
@@ -19,5 +20,10 @@ class Smile
   def to_s
     'happy thoughts'
   end
+
+  private
+  #everything after here is private
+
+  
 
 end

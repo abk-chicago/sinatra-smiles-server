@@ -34,3 +34,9 @@ end
 get "/smiles" do
   { :happy_thoughts => happy_thoughts.get_smiles }.to_json
 end
+
+get '/smiles/:keyword' do
+  @query = params[:keyword]
+  @list = happy_thoughts.find_smile(@query)
+  { :search_results => @list }.to_json
+end
