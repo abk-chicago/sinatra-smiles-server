@@ -8,6 +8,8 @@ happy_thoughts.add_smile("life is good")
 happy_thoughts.add_smile("Spotify music")
 happy_thoughts.add_smile("comfy clothes")
 happy_thoughts.add_smile("puppies and kittens")
+happy_thoughts.add_smile("dogs and cats")
+happy_thoughts.add_smile("comfy comfy snuggly bed")
 
 before '/*' do
   puts Rainbow('Request ----- ').send(:aqua)
